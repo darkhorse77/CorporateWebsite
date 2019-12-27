@@ -1,0 +1,15 @@
+﻿@model CorporateWebsite.ViewModels.ProfileViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+@Model.LastName @Model.FirstName @Model.Patronymic
+    <span style="color:gray">@Model.UserName</span>
+    <br />
+Your roles:
+<ul>
+    @foreach (var item in Model.Roles)
+    {
+        <li>@item</li>
+    }
+</ul>
