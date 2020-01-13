@@ -27,7 +27,7 @@
                         <li class="list-group-item">@item.Title <a asp-action="RemoveSection" asp-controller="Content" asp-route-id="@item.Id" aria-hidden="true" class="close border-0" aria-label="Close">&times;</a></li>
                     }
                 </ul>
-                <a href="#">Добавить раздел</a>
+                <a href="#" class="disabled">Добавить раздел</a>
             </td>
             <td>
                 <a asp-action="RemoveModule" asp-route-id="@module.Id">Удалить модуль</a>

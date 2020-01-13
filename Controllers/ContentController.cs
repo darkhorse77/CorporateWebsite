@@ -1,8 +1,10 @@
 ﻿using CorporateWebsite.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CorporateWebsite.Controllers
 {
+    [Authorize(Roles = "manager")]
     public class ContentController : Controller
     {
         public IActionResult Index()
@@ -10,8 +12,11 @@ namespace CorporateWebsite.Controllers
             return View(ContentModel.GetModules());
         }
 
+        //todo написать методы для добавления и редактирования разделов и модулей
+
         #region 
         //todo здесь должнны быть методы POST или DELETE, но ради экономии времени я временно сделал GET
+        //todo 
         public IActionResult RemoveModule(string id)
         {
             bool isSucces = ContentModel.RemoveModule(int.Parse(id));

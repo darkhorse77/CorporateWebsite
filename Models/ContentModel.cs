@@ -30,6 +30,7 @@ namespace CorporateWebsite.Models
             using (ApplicationContext db = new ApplicationContext())
             {
                 db.ContentModules.Remove(new ContentModule { Id = id });
+                db.SaveChanges();
             }
             return true;
         }
@@ -38,7 +39,9 @@ namespace CorporateWebsite.Models
         {
             using (ApplicationContext db = new ApplicationContext())
             {
+                //db.ModuleSections.Remove(db.ModuleSections.Where(x => x.Id == id).FirstOrDefault());
                 db.ModuleSections.Remove(new ModuleSection { Id = id });
+                db.SaveChanges();
             }
             return true;
         }
