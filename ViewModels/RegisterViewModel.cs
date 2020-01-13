@@ -1,9 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using CorporateWebsite.Models;
 
 namespace CorporateWebsite.ViewModels
 {
-    public class RegisterViewModel 
+    public class RegisterViewModel
     {
         [Required]
         [Display(Name = "Email")]

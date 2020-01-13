@@ -1,4 +1,4 @@
-﻿using CorporateWebsite.Models; 
+﻿using CorporateWebsite.Models;
 using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
 
@@ -24,7 +24,7 @@ namespace CorporateWebsite
                 IdentityResult result = await userManager.CreateAsync(admin, password);
                 if (result.Succeeded)
                 {
-                    await userManager.AddToRoleAsync(admin, "admin");
+                    await userManager.AddToRolesAsync(admin, new string[] { "admin", "manager" });
                 }
             }
         }

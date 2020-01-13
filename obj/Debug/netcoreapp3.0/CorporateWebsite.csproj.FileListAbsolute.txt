@@ -40,6 +40,7 @@ C:\Users\Snoop Dogg\source\repos\Test\bin\Debug\netcoreapp3.0\Microsoft.Extensio
 C:\Users\Snoop Dogg\source\repos\Test\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
 C:\Users\Snoop Dogg\source\repos\Test\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Snoop Dogg\source\repos\Test\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\Snoop Dogg\source\repos\Test\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.BrowserLink.dll
 C:\Users\Snoop Dogg\source\repos\Test\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\Snoop Dogg\source\repos\Test\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 C:\Users\Snoop Dogg\source\repos\Test\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -134,6 +135,7 @@ C:\Users\Snoop Dogg\source\repos\Test\obj\Debug\netcoreapp3.0\CorporateWebsite.T
 C:\Users\Snoop Dogg\source\repos\Test\obj\Debug\netcoreapp3.0\CorporateWebsite.RazorCoreGenerate.cache
 C:\Users\Snoop Dogg\source\repos\Test\obj\Debug\netcoreapp3.0\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\Snoop Dogg\source\repos\Test\obj\Debug\netcoreapp3.0\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Snoop Dogg\source\repos\Test\obj\Debug\netcoreapp3.0\Razor\Views\Content\Index.cshtml.g.cs
 C:\Users\Snoop Dogg\source\repos\Test\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Snoop Dogg\source\repos\Test\obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Snoop Dogg\source\repos\Test\obj\Debug\netcoreapp3.0\Razor\Views\Profile\Index.cshtml.g.cs

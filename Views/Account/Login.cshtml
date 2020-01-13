@@ -15,10 +15,11 @@
         <span asp-validation-for="Password"></span>
     </div>
     <div>
-        <label asp-for="RememberMe"></label><br />
+        <label asp-for="RememberMe"></label>
         <input asp-for="RememberMe" />
     </div>
     <div>
-        <input type="submit" value="Войти" />
+        <input type="submit" value="Войти" class="btn btn-primary"/>
     </div>
 </form>
+<a asp-action="Register">Ещё не в системе? Зарегистрируйтесь</a>

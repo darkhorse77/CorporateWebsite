@@ -9,8 +9,8 @@
     }
 
     public class CreateUserViewModel : BaseUserModel
-    {     
-        public string Password { get; set; }       
+    {
+        public string Password { get; set; }
     }
 
     public class EditUserViewModel : BaseUserModel

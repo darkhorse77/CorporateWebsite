@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using CorporateWebsite.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using CorporateWebsite.Models;
+using System.Diagnostics;
 
 namespace CorporateWebsite.Controllers
 {
@@ -20,7 +16,7 @@ namespace CorporateWebsite.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(ContentModel.GetModules());
         }
 
         public IActionResult Privacy()

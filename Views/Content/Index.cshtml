@@ -1,0 +1,40 @@
+﻿@model List<ContentModule>
+@{
+    ViewData["Title"] = "Управление контентом";
+}
+
+<h2>Список модулей</h2>
+<table class="table table-bordered">
+    <thead class="thead-light">
+        <tr>
+            <td>Id</td>
+            <td>Заголовок</td>
+            <td>Описание</td>
+            <td>Разделы</td>
+            <td>Действия</td>
+        </tr>
+    </thead>
+    @foreach (var module in Model)
+    {
+        <tr>
+            <td>@module.Id</td>
+            <td>@module.Title</td>
+            <td>@module.Description</td>
+            <td>
+                <ul class="list-group">
+                    @foreach (var item in module.Sections)
+                    {
+                        <li class="list-group-item">@item.Title <a asp-action="RemoveSection" asp-controller="Content" asp-route-id="@item.Id" aria-hidden="true" class="close border-0" aria-label="Close">&times;</a></li>
+                    }
+                </ul>
+                <a href="#">Добавить раздел</a>
+            </td>
+            <td>
+                <a asp-action="RemoveModule" asp-route-id="@module.Id">Удалить модуль</a>
+            </td>
+        </tr>
+    }
+</table>
+<a href="#">Добавить модуль</a>
+
+    

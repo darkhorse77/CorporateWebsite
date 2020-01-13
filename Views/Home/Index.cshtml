@@ -1,17 +1,21 @@
-﻿@{
+﻿@model List<ContentModule>
+@{
     ViewData["Title"] = "Главная";
 }
 
-@if (User.Identity.IsAuthenticated)
+@foreach (var item in Model)
 {
-    <p>Добро пожаловать, @User.Identity.Name!</p>
+    <div class="media" style="margin: 10px;">
+        <div class="media-body">
+            <h4 class="media-heading" >@item.Title</h4>
+            @item.Description
+        <ul>
+            @foreach (var s in item.Sections)
+            {
+                <li>@s.Title</li>
+            }
+        </ul>
+        </div>
+    </div>
+}
 
-    <form method="post" asp-controller="Account" asp-action="Logout">
-        <input type="submit" value="Выход" />
-    </form>
-}
-else
-{
-    <a asp-controller="Account" asp-action="Login">Вход</a>
-    <a asp-controller="Account" asp-action="Register">Регистрация</a>
-}

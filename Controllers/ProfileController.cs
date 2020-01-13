@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using CorporateWebsite.Models;
+using CorporateWebsite.ViewModels;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using CorporateWebsite.Models;
-using CorporateWebsite.ViewModels;
 
 namespace CorporateWebsite.Controllers
 {
@@ -32,6 +30,6 @@ namespace CorporateWebsite.Controllers
                 return RedirectToAction("Index", "Home");
             }
             return View(new ProfileViewModel { UserName = currentUser.UserName, FirstName = currentUser.FirstName, LastName = currentUser.LastName, Patronymic = currentUser.Patronymic, Roles = _userManager.GetRolesAsync(currentUser).Result.ToList() });
-        }     
+        }
     }
 }

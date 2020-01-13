@@ -3,13 +3,16 @@
     ViewData["Title"] = "Index";
 }
 
+<img src="https://www.travelcontinuously.com/wp-content/uploads/2018/04/empty-avatar.png" alt="Avatar" width="240" />
+<br />
 @Model.LastName @Model.FirstName @Model.Patronymic
-    <span style="color:gray">@Model.UserName</span>
-    <br />
-Your roles:
+<span style="color:gray">@Model.UserName</span>
+
+<br />Your roles:
 <ul>
     @foreach (var item in Model.Roles)
     {
         <li>@item</li>
     }
 </ul>
+
